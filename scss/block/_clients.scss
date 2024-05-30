@@ -1,0 +1,62 @@
+.clients-section {
+    @include d_flex();
+    flex-direction: column;
+    margin: 15rem 0;
+  
+    h2 {
+      font-size: $h2-font-size;
+      color: $NeutralsColor2;
+      font-family: $secondary-font;
+      font-weight: 600;
+      max-width: 80rem;
+      text-align: center;
+      margin-bottom: 8rem;
+    }
+  
+    .clients_logo {
+      @include d_flex();
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  
+    .logo, .logo2 {
+      padding: 4vh 8vw;
+      max-width: 100%;
+    }
+  
+    .logo:nth-of-type(1), .logo:nth-of-type(2) {
+      border-right: 1px solid $NeutralsColor6;
+      border-bottom: 1px solid $NeutralsColor6;
+    }
+  
+    .logo2:nth-of-type(1), .logo2:nth-of-type(2) {
+      border-right: 1px solid $NeutralsColor6;
+    }
+  
+    .logo:nth-of-type(3) {
+      border-bottom: 1px solid $NeutralsColor6;
+    }
+  
+    @media (max-width: 991px) {
+      .logo, .logo2 {
+        padding: 2vh 4vw;
+      }
+    }
+  
+    @media (max-width: 640px) {
+      .clients_logo {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+  
+      .logo, .logo2 {
+        padding: 1vh 2vw;
+        border: none !important;
+        border-bottom: 1px solid $NeutralsColor6 !important;
+        flex-grow: 1;
+        width: 70%; /* Ensure logos take up the full width */
+      }
+    }
+  }
+  

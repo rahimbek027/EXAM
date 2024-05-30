@@ -1,0 +1,123 @@
+header .container {
+  @include d_flex($justifiy: space-between);
+  padding: 2rem;
+  .navbar,
+  .navigation_links {
+    @include d_flex($justifiy: space-between);
+
+    .logo {
+      display: block;
+      border-right: 1px solid $NeutralsColor6;
+      padding-right: clamp(1rem, 2vw + 1rem, 4rem);
+      margin-right: clamp(1rem, 2vw + 1rem, 4rem);
+    }
+    .navbar_collection_button,
+    %navbar_collection_button {
+      color: $NeutralsColor4;
+      font-size: $button2-font-size;
+      font-family: $primary-font;
+      background-color: transparent;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      transition: all 0.4s;
+      &:hover {
+        color: $NeutralsColor2;
+        border-color: $NeutralsColor2;
+      }
+    }
+    .navbar_collection_arrow {
+      transform: rotate(90deg);
+      display: inb;
+      transition: all 0.4s;
+    }
+
+
+      
+     
+  }
+  .header_buttons {
+    @include d_flex($justifiy: space-between, $gap: 2.4rem);
+
+    button,
+    a {
+      @include d_flex($justifiy: space-between, $gap: 1.2rem);
+      color: $NeutralsColor4;
+      font-size: $button2-font-size;
+      font-family: $primary-font;
+      background-color: transparent;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      transition: all 0.4s;
+      &:hover {
+        color: $NeutralsColor2;
+        border-color: $NeutralsColor2;
+      }
+    }
+    .property_list_btn {
+      color: $NeutralsColor2;
+      border: 2px solid $NeutralsColor6;
+      padding: 1.2rem 1.6rem;
+      border-radius: 9rem;
+      white-space: nowrap;
+    }
+    .notifilication_bell {
+      position: relative;
+    }
+    .notifilication_bell::after {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      // border: 2px solid $NeutralsColor6;
+      position: absolute;
+      top: -0.3rem;
+      left: 2.1rem;
+      transform: translate(-50%, -50%);
+      background-color: $primaryColor2;
+    }
+    .user_avatar img {
+      width: 50px;
+    }
+    .menu,
+    .onMobile {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header .container .support_btn,
+  .change_language {
+    display: none !important;
+  }
+  .user_avatar {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 572px) {
+  .navbar_collection_button,
+  .navbar_collection_arrow,
+  .property_list_btn,
+  .user_avatar {
+    display: none !important;
+  }
+  .menu {
+    display: block !important;
+    img {
+      display: block !important;
+      width: 4rem;
+    }
+  }
+  .logo {
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 90% !important;
+  }
+  .header_buttons {
+    gap: 1rem !important;
+  }
+}

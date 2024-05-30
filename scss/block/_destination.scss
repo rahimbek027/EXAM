@@ -1,0 +1,151 @@
+.destination {
+  margin-top: 30vh;
+
+  .destination_header {
+    @include d_flex($justifiy: space-between);
+
+    h2 {
+      font-size: $h3-font-size;
+      font-family: $primary-font;
+      color: $NeutralsColor2;
+    }
+
+    p {
+      font-size: 2.4rem;
+      color: $NeutralsColor4;
+      font-family: $secondary-font;
+    }
+
+    .destination_slide_btns {
+      @include d_flex($gap: 0.8rem);
+    }
+
+    button {
+      @include d_flex();
+      color: $NeutralsColor2;
+      background-color: transparent;
+      padding: 1.2rem;
+      border: none;
+      border-radius: 9rem;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: all 0.4s;
+
+      &:hover {
+        color: $NeutralsColor2;
+        background-color: $NeutralsColor7;
+      }
+
+      &:last-of-type {
+        transform: rotate(180deg);
+        border: 2px solid $NeutralsColor6;
+      }
+    }
+  }
+
+  .destination_cards {
+    @include d_flex($justifiy: space-between, $gap: 3vw);
+    margin-top: 3.2rem;
+    overflow-x: auto;
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+  
+    /* Hide scrollbar for WebKit browsers */
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  
+    /* Hide scrollbar for other browsers */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  
+    .destination_card {
+      img {
+        width: 336px;
+        display: block;
+      }
+  
+      h3 {
+        font-size: 2.4rem;
+        color: $NeutralsColor2;
+        font-family: $secondary-font;
+        font-weight: 500;
+        white-space: nowrap;
+        margin-top: 0.8rem;
+      }
+  
+      p {
+        font-size: 1.2rem;
+        color: $NeutralsColor4;
+        font-family: $secondary-font;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+  
+  .show_more_destination_btn {
+    @include d_flex();
+    color: $NeutralsColor2;
+    background-color: transparent;
+    border: 2px solid $NeutralsColor6;
+    padding: 1.2rem 1.6rem;
+    margin-top: 4vh;
+    border-radius: 9rem;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.4s;
+    &:hover {
+      color: $NeutralsColor2;
+      background-color: $NeutralsColor7;
+    }
+  }
+
+  .destination_slide_btns__onMobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .destination {
+    margin-top: 19vh;
+
+    .destination_cards .destination_card img {
+      width: 265px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .destination {
+    margin-top: 10vh;
+
+    .destination_slide_btns {
+      display: none !important;
+    }
+
+    .destination_slide_btns__onMobile {
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 4.8rem;
+      .slide_left_btn {
+        color: $NeutralsColor2;
+        background-color: transparent;
+        padding: 1.2rem;
+        border: none;
+        border-radius: 9rem;
+        white-space: nowrap;
+        cursor: pointer;
+        transition: all 0.4s;
+
+        &:hover {
+          color: $NeutralsColor2;
+          background-color: $NeutralsColor7;
+        }
+
+        &:last-of-type {
+          transform: rotate(180deg);
+          border: 2px solid $NeutralsColor6;
+        }
+      }
+    }
+  }
+}

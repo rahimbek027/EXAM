@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rahimbek Xabibullayev's project</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Hero section start here -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <div class="navbar__logo">
+            <a href="#">
+              <img src="./assets/logo.svg" alt="logo" class="logo" />
+            </a>
+          </div>
+          <button class="navbar_collection_button">Travelers</button>
+          <div class="navbar_collection_arrow">
+            <img src="./assets/simpleArrow.svg" alt="arrow" />
+          </div>
+        </nav>
+        <div class="header_buttons">
+          <a href="#" class="support_btn">Support</a>
+          <button class="change_language">
+            <img src="./assets/lang.svg" alt="glob" />
+            Language
+          </button>
+          <button class="property_list_btn">List your property</button>
+          <button class="notification_bell">
+            <img src="./assets/bell.svg" alt="bell" />
+          </button>
+          <a href="#" class="user_avatar">
+            <img src="./images/avatar.png" alt="girl" />
+          </a>
+          <img src="./images/avatar.png" alt="girl" class="onMobile" />
+          <button class="menu">
+            <img src="./assets/menu.svg" alt="menu" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Hero section end -->
+
+    <!-- Main section start here -->
+    <main>
+      <!-- Hero section here -->
+      <section class="hero">
+        <div class="hero__content">
+          <h1>Car rentals</h1>
+          <p>Find and book a great experience.</p>
+          <button class="hero__btn">Start your search</button>
+        </div>
+
+        <div class="hero__car_mega_search container">
+          <div class="car_mega_search__tab">
+            <div class="car_mega_search__tab__header">
+              <button class="tab-link" data-tab="tab1">Stays</button>
+              <button class="tab-link" data-tab="tab2">Flights</button>
+              <button class="tab-link active" data-tab="tab3">Cars</button>
+              <button class="tab-link" data-tab="tab4">Packages</button>
+              <button class="tab-link" data-tab="tab5">Things to do</button>
+            </div>
+            <div class="car_mega_search__tab__items">
+              <div class="tab_items__filter_btns">
+                <button class="filter_btn active">
+                  Return to same location
+                </button>
+                <button class="filter_btn">Return to different location</button>
+              </div>
+
+              <div class="car_mega_search__items__flex_box">
+                <div class="flex_box__content">
+                  <img src="./assets/location.svg" alt="location" />
+                  <div class="flex_box__text_content">
+                    <h2>Pickup location</h2>
+                    <p>Where are you?</p>
+                  </div>
+                </div>
+
+                <div class="flex_box__content">
+                  <img src="./assets/calendar.svg" alt="calendar" />
+                  <div class="flex_box__text_content">
+                    <h2>Tue, May 11</h2>
+                    <p>10:00 AM</p>
+                  </div>
+                </div>
+
+                <div class="flex_box__content">
+                  <img src="./assets/calendar.svg" alt="calendar" />
+                  <div class="flex_box__text_content">
+                    <h2>Fri, May 11</h2>
+                    <p>10:00 AM</p>
+                  </div>
+                </div>
+                <div class="flex_box__content_only_mobile">
+                  <div class="flex_box__text_content">
+                    <h2>Location</h2>
+                    <p>Where are you going?</p>
+                  </div>
+                </div>
+
+                <button class="mega_search__btn">
+                  <img src="./assets/search.svg" alt="search" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero section end -->
+
+      <section class="destination">
+        <div class="container">
+          <div class="destination_header">
+            <div class="destination_header__text">
+              <h2>Popular destinations</h2>
+              <p>for car rentals</p>
+            </div>
+            <div class="destination_slide_btns">
+              <button class="slide_left_btn" onclick="scrollToNext()">
+                <img src="./assets/arrow.svg" alt="arrow" />
+              </button>
+              <button class="slide_left_btn" onclick="scrollToPrev()">
+                <img src="./assets/arrow.svg" alt="arrow" />
+              </button>
+            </div>
+          </div>
+          <div class="destination_cards">
+            <div class="destination_card">
+              <div class="destination_card__img">
+                <img src="./images/paris.png" alt="paris" />
+              </div>
+              <div class="destination_card__text">
+                <h3>Paris</h3>
+                <p>Car rentals in 86 pickup locations</p>
+              </div>
+            </div>
+            <div class="destination_card">
+              <div class="destination_card__img">
+                <img src="./images/london.png" alt="london" />
+              </div>
+              <div class="destination_card__text">
+                <h3>London</h3>
+                <p>Car rentals in 86 pickup locations</p>
+              </div>
+            </div>
+            <div class="destination_card">
+              <div class="destination_card__img">
+                <img src="./images/ams.png" alt="amsterdam" />
+              </div>
+              <div class="destination_card__text">
+                <h3>Ams</h3>
+                <p>Car rentals in 86 pickup locations</p>
+              </div>
+            </div>
+            <div class="destination_card">
+              <div class="destination_card__img">
+                <img src="./images/milan.png" alt="milan" />
+              </div>
+              <div class="destination_card__text">
+                <h3>Milan</h3>
+                <p>Car rentals in 86 pickup locations</p>
+              </div>
+            </div>
+          </div>
+          <div class="destination_slide_btns__onMobile">
+            <button class="slide_left_btn">
+              <img src="./assets/arrow.svg" alt="arrow" />
+            </button>
+            <button class="slide_left_btn">
+              <img src="./assets/arrow.svg" alt="arrow" />
+            </button>
+          </div>
+          <button class="show_more_destination_btn">
+            Show more <img src="/assets/simpleArrow.svg" alt="" />
+          </button>
+        </div>
+      </section>
+
+      <section class="getTheApp">
+        <div class="container">
+          <div class="cta_content">
+            <h2 class="subtitle">supercharge your planning powers</h2>
+            <h1 class="main-title">Rent a car in minutes with Fleet</h1>
+            <p class="description">
+              Stacks is a production-ready library of stackable content blocks
+              built in React Native.
+            </p>
+            <form class="input-container">
+              <input
+                placeholder="Enter your phone number"
+                class="input-label"
+              />
+              <button
+                type="submit"
+                class="button-wrapper"
+                aria-label="Submit phone number"
+              >
+                <img
+                  loading="lazy"
+                  src="./assets/arrowWhite.svg"
+                  alt="arrow"
+                  class="icon"
+                />
+              </button>
+            </form>
+          </div>
+          <div class="cta_img">
+            <img src="./images/phoneMockup.png" alt="phone" />
+          </div>
+          <div class="cta_img_OnMobile">
+            <img src="./images/phoneMockup_mobile.png" alt="phone" />
+          </div>
+        </div>
+      </section>
+
+      <section class="destination explore_n_section">
+        <div class="container">
+          <div class="destination_header">
+            <div class="destination_header__text">
+              <h2>Explore nearby</h2>
+              <p>for car rentals</p>
+            </div>
+            <div class="destination_slide_btns">
+              <button class="slide_left_btn" onclick="scrollToNext()">
+                <img src="./assets/arrow.svg" alt="arrow" />
+              </button>
+              <button class="slide_left_btn" onclick="scrollToPrev()">
+                <img src="./assets/arrow.svg" alt="arrow" />
+              </button>
+            </div>
+          </div>
+          <div class="destination_cards">
+            <div class="destination_card">
+              <div class="destination_card__img">
+                <img src="./images/paris.png" alt="paris" />
+              </div>
+              <div class="destination_card__text">
+                <h3>Paris</h3>
+                <p>Car rentals in 86 pickup locations</p>
+              </div>
+            </div>
+            <div class="destination_card">
+              <div class="destination_card__img">
+                <img src="./images/london.png" alt="london" />
+              </div>
+              <div class="destination_card__text">
+                <h3>London</h3>
+                <p>Car rentals in 86 pickup locations</p>
+              </div>
+            </div>
+            <div class="destination_card">
+              <div class="destination_card__img">
+                <img src="./images/ams.png" alt="amsterdam" />
+              </div>
+              <div class="destination_card__text">
+                <h3>Ams</h3>
+                <p>Car rentals in 86 pickup locations</p>
+              </div>
+            </div>
+            <div class="destination_card">
+              <div class="destination_card__img">
+                <img src="./images/milan.png" alt="milan" />
+              </div>
+              <div class="destination_card__text">
+                <h3>Milan</h3>
+                <p>Car rentals in 86 pickup locations</p>
+              </div>
+            </div>
+          </div>
+          <div class="destination_cards">
+            <div class="destination_card">
+              <div class="destination_card__img">
+                <img src="./images/paris.png" alt="paris" />
+              </div>
+              <div class="destination_card__text">
+                <h3>Paris</h3>
+                <p>Car rentals in 86 pickup locations</p>
+              </div>
+            </div>
+            <div class="destination_card">
+              <div class="destination_card__img">
+                <img src="./images/london.png" alt="london" />
+              </div>
+              <div class="destination_card__text">
+                <h3>London</h3>
+                <p>Car rentals in 86 pickup locations</p>
+              </div>
+            </div>
+            <div class="destination_card">
+              <div class="destination_card__img">
+                <img src="./images/ams.png" alt="amsterdam" />
+              </div>
+              <div class="destination_card__text">
+                <h3>Ams</h3>
+                <p>Car rentals in 86 pickup locations</p>
+              </div>
+            </div>
+            <div class="destination_card">
+              <div class="destination_card__img">
+                <img src="./images/milan.png" alt="milan" />
+              </div>
+              <div class="destination_card__text">
+                <h3>Milan</h3>
+                <p>Car rentals in 86 pickup locations</p>
+              </div>
+            </div>
+          </div>
+          <div class="destination_cards">
+            <div class="destination_card">
+              <div class="destination_card__img">
+                <img src="./images/milan.png" alt="milan" />
+              </div>
+              <div class="destination_card__text">
+                <h3>Milan</h3>
+                <p>Car rentals in 86 pickup locations</p>
+              </div>
+            </div>
+
+            <div class="destination_card">
+              <div class="destination_card__img">
+                <img src="./images/paris.png" alt="paris" />
+              </div>
+              <div class="destination_card__text">
+                <h3>Paris</h3>
+                <p>Car rentals in 86 pickup locations</p>
+              </div>
+            </div>
+            <div class="destination_card">
+              <div class="destination_card__img">
+                <img src="./images/london.png" alt="london" />
+              </div>
+              <div class="destination_card__text">
+                <h3>London</h3>
+                <p>Car rentals in 86 pickup locations</p>
+              </div>
+            </div>
+            <div class="destination_card">
+              <div class="destination_card__img">
+                <img src="./images/ams.png" alt="amsterdam" />
+              </div>
+              <div class="destination_card__text">
+                <h3>Ams</h3>
+                <p>Car rentals in 86 pickup locations</p>
+              </div>
+            </div>
+          </div>
+          <div class="destination_slide_btns__onMobile">
+            <button class="slide_left_btn">
+              <img src="./assets/arrow.svg" alt="arrow" />
+            </button>
+            <button class="slide_left_btn">
+              <img src="./assets/arrow.svg" alt="arrow" />
+            </button>
+          </div>
+          <button class="show_more_destination_btn">
+            Show more <img src="/assets/simpleArrow.svg" alt="" />
+          </button>
+        </div>
+      </section>
+
+      <section class="services container">
+        <div class="services__head">
+          <header class="agency-header">
+            A creative agency that lead and inspire
+          </header>
+          <h2 class="agency-services-title">Amazing Services</h2>
+          <a href="#contact" class="contact-button" tabindex="0">Contact Us</a>
+        </div>
+
+        <section class="services__body">
+          <div class="column">
+            <div class="card">
+              <img
+                loading="lazy"
+                src="./assets/smile.svg"
+                alt="Icon for reviewers"
+              />
+              <h3 class="title">1+M reviewers</h3>
+              <p class="description">
+                We realize ideas from simple to complex, everything becomes easy
+                to use and reach the most potential customers.
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/b02bc31989470c2e46bf4d2656ac2c59474913682393c71be6020b88a2aaa9e9?apiKey=52a87d665def40e4a78b35eba4d286cb&"
+                alt="Icon for customer service"
+              />
+              <h3 class="title">24/7 customer service</h3>
+              <p class="description">
+                We realize ideas from simple to complex, everything becomes easy
+                to use and reach the most potential customers.
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/cd0bb6659c6e7ca037b9bce9e3d070dfeee580aa25a05fe5479f49b73b437f41?apiKey=52a87d665def40e4a78b35eba4d286cb&"
+                alt="Icon for free cancellation"
+              />
+              <h3 class="title">Free cancellation</h3>
+              <p class="description">
+                We realize ideas from simple to complex, everything becomes easy
+                to use and reach the most potential customers.
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+
+     <section class="clients-section">
+  <h2>We work with teams from over the world</h2>
+  <div class="clients_logo">
+    <img src="./assets/team logo/logo 01.svg" alt="logo" class="logo">
+    <img src="./assets/team logo/logo 02.svg" alt="logo" class="logo">
+    <img src="./assets/team logo/logo 03.svg" alt="logo" class="logo">
+  </div>
+  <div class="clients_logo">
+    <img src="./assets/team logo/logo 04.svg" alt="logo" class="logo2">
+    <img src="./assets/team logo/logo 05.svg" alt="logo" class="logo2">
+    <img src="./assets/team logo/logo 06.svg" alt="logo" class="logo2">
+  </div>
+</section>
+
+
+      <div class="container">
+        <section class="faq-section">
+          <h1 class="faq-title">Frequently asked questions</h1>
+          <nav class="faq-tabs">
+            <div class="tab tab-active">General</div>
+            <div class="tab">Support</div>
+            <div class="tab">Hosting</div>
+            <div class="tab">Product</div>
+          </nav>
+          <article class="faq-item">
+            <div class="faq-question">
+              <div class="faq-number">01</div>
+              <div class="faq-text">How does it work?</div>
+            </div>
+            <img
+              loading="lazy"
+              src="./assets/simpleArrow.svg"
+              class="faq-image"
+              alt="Expand FAQ item"
+            />
+          </article>
+          <div class="faq-divider"></div>
+          <article class="faq-item">
+            <div class="faq-question">
+              <div class="faq-number">02</div>
+              <div class="faq-text">How can I set up a new website?</div>
+            </div>
+            <img
+              loading="lazy"
+              src="./assets/simpleArrow.svg"
+              class="faq-image active"
+              alt="Expand FAQ item"
+            />
+          </article>
+          <div class="faq-divider"></div>
+          <section class="faq-description">
+            The Stacks series of products: Stacks: Landing Page Kit, Stacks:
+            Portfolio Kit, Stacks: eCommerce Kit. "Stacks is a production-ready
+            library of stackable content blocks built in React Native.
+            Mix-and-match dozens of responsive elements to quickly configure
+            your favorite landing page layouts or hit the ground running with 10
+            pre-built templates, all in light or dark mode."
+          </section>
+          <article class="faq-item">
+            <div class="faq-question">
+              <div class="faq-number">03</div>
+              <div class="faq-text">How does it work?</div>
+            </div>
+            <img
+              loading="lazy"
+              src="./assets/simpleArrow.svg"
+              class="faq-image"
+              alt="Expand FAQ item"
+            />
+          </article>
+          <div class="faq-divider"></div>
+          <article class="faq-item">
+            <div class="faq-question">
+              <div class="faq-number">04</div>
+              <div class="faq-text">How does it work?</div>
+            </div>
+            <img
+              loading="lazy"
+              src="./assets/simpleArrow.svg"
+              class="faq-image"
+              alt="Expand FAQ item"
+            />
+          </article>
+          <div class="faq-divider"></div>
+          <article class="faq-item">
+            <div class="faq-question">
+              <div class="faq-number">05</div>
+              <div class="faq-text">How does it work?</div>
+            </div>
+            <img
+              loading="lazy"
+              src="./assets/simpleArrow.svg"
+              class="faq-image"
+              alt="Expand FAQ item"/>
+      </div>
+      <div class="container">
+        <section class="recommended-locations">
+            <h2 class="title1">Recommended pickup locations</h2>
+            <p class="subtitle">A lot of amazing experiences 🏝</p>
+            <div class="locations-container">
+              <article class="location-card">
+                <p class="location-number">128</p>
+                <img src="./assets/car.svg" alt="South Virgilland" class="location-image" />
+                <h3 class="location-name">South Virgilland</h3>
+                <p class="location-price">From Rs. 1,461 per day</p>
+              </article>
+              <article class="location-card">
+                <p class="location-number">256</p>
+                <img src="./assets/car.svg" alt="Purdyhaven" class="location-image" />
+                <h3 class="location-name">Purdyhaven</h3>
+                <p class="location-price">From Rs. 1,461 per day</p>
+              </article>
+              <article class="location-card">
+                <p class="location-number">128</p>
+                <img src="./assets/car.svg" alt="Port Jarrett" class="location-image" />
+                <h3 class="location-name">Port Jarrett</h3>
+                <p class="location-price">From Rs. 1,461 per day</p>
+              </article>
+              <article class="location-card">
+                <p class="location-number">256</p>
+                <img src="./assets/car.svg" alt="New Kristian" class="location-image" />
+                <h3 class="location-name">New Kristian</h3>
+                <p class="location-price">From Rs. 1,461 per day</p>
+              </article>
+              <article class="location-card">
+                <p class="location-number">128</p>
+                <img src="./assets/car.svg" alt="Demetrisfort" class="location-image" />
+                <h3 class="location-name">Demetrisfort</h3>
+                <p class="location-price">From Rs. 1,461 per day</p>
+              </article>
+            </div>
+            <section class="promotion-container">
+              <div class="promotion-content">
+                <img src="./assets/arrow.svg" alt="" class="promotion-icon" />
+                <div class="icon-holder">
+                  <img src="./assets/arrow.svg" alt="" class="promotion-icon" style="transform: rotate(180deg);"/>
+              </div>
+            </section>
+          </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-branding">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/6659cc055f55699d5be877fdb2cccc6cf176a69bafc20ac279f08fe322c60884?apiKey=52a87d665def40e4a78b35eba4d286cb&" alt="Fleet logo" class="footer-logo" />
+            <div class="brand-name">fleet</div>
+          </div>
+          <nav class="footer-links">
+            <div class="link-column">
+              <a href="#" class="link">About</a>
+              <a href="#" class="link link-spacing">Projects</a>
+            </div>
+            <div class="link-column">
+              <a href="#" class="link">What We Do</a>
+              <a href="#" class="link link-spacing">Press</a>
+            </div>
+            <div class="link-column">
+              <a href="#" class="link">Jobs</a>
+              <a href="#" class="link link-spacing">Download</a>
+            </div>
+          </nav>
+          <div class="footer-community">
+            <div class="community-title">Join our community 🔥</div>
+            <form class="community-form">
+              <label for="emailInput" class="visually-hidden">Enter your email</label>
+              <input type="email" id="emailInput" class="form-input" placeholder="Enter your email" aria-label="Enter your email" />
+              <button type="submit" class="form-button">
+                <img loading="lazy" src="./assets/arrowWhite.svg" alt="" class="button-icon" />
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-copyright">Copyright © 2021 UI8 LLC. All rights reserved</div>
+      </footer>
+    <script>
+      function scrollToPrev() {
+        const container = document.querySelector(".destination_cards");
+        const scrollAmount =
+          container.querySelector(".destination_card").offsetWidth +
+          parseInt(getComputedStyle(container).gap);
+        container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+      }
+
+      function scrollToNext() {
+        const container = document.querySelector(".destination_cards");
+        const scrollAmount =
+          container.querySelector(".destination_card").offsetWidth +
+          parseInt(getComputedStyle(container).gap);
+        container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+      }
+    </script>
+  </body>
+</html>

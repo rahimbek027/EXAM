@@ -1,0 +1,24 @@
+@import "./fonts";
+@import "./reset";
+@import "./variables";
+@import "./mixin";
+
+@import "./block/navbar";
+@import "./block/hero";
+@import "./block/destination";
+@import "./block/getTheApp";
+@import "./block/services";
+@import "./block/clients";
+@import "./block/faqs";
+@import "./block/recomended_location";
+@import "./block/footer";
+
+
+
+
+
+
+body {
+  min-height: 100vh;
+  background-color: #fcfcfd;
+}
